@@ -1,15 +1,116 @@
 
 
-ul li .active {
-    background-color: #4aaaa5;
-    color: white;
-    position: relative;
-    right: 100px;
+body{
+    background-image: url('../images/funky-lines.jpg');
+    background-color: #f1f1f1;
+    color: #777777;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+
+/* Navigation */
+nav {
+    background: linear-gradient(135deg, #e0e0e0, #f0f0f0 45%, white);
+    border-bottom: 1px solid #dddddd;
+    /* height: 25px; */
+}
+
+li a {
+    font-size: large;
+    color: #777777;
+    text-decoration: none;
+}
+
+ul hr {
+    margin: 0;
+    margin-top: 5px;
+    border: 1px solid;
+    opacity: 0.15;
+}
+
+li a:hover:not(.active) {
+    background-color: #f0f0f0;
+    color: #777777;
+    /* text-decoration: underline; */
+}
+
+li a:hover > hr {
+    margin: 0;
+    border: 0;
+    width: 110%;
+    color: #4aaaa5;
+    margin-top: -10px;
+    opacity: 0.5;
+    border-top: 10px solid #4aaaa5;
 }
 
 
 
+.active {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 40px;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+}
 
 
+/* This will overwrite the inherit property of "a" without an HREF */
+a:not([href]) {
+    color: white;
+}
+
+
+/* Body */
+section {
+    background: white;
+    border: 1px solid #dddddd;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    height: 700px;
+    overflow: auto;
+}
+
+
+section h2 {
+    color: #4aaaa5;
+}
+
+
+section hr {
+    width: 900px;
+    border-top: 2.5px solid #dddddd;
+    margin: 25px 10px 25px 10px;
+    overflow: auto;
+}
+
+
+p img {
+    float: left;
+    margin: 10px;
+}
+
+
+section p {
+    line-height: 3.5;
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #666666;
+    border-top: 10px solid #4aaaa5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
 
 
