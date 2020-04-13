@@ -28,14 +28,19 @@ ul hr {
     opacity: 0.15;
 }
 
-li a:hover:not(.active) {
+
+/* Only the active links will have this feature */
+li a:hover:not(.active) { 
     background-color: #f0f0f0;
     color: #777777;
+    padding-bottom: 25px; /* Make sure the highlight reaches the bottom of the nav bar */
     /* text-decoration: underline; */
 }
 
+
 li a:hover > hr {
     margin: 0;
+    padding: 0;
     border: 0;
     width: 110%;
     color: #4aaaa5;
@@ -93,7 +98,8 @@ p img {
 
 
 section p {
-    line-height: 3.5;
+    line-height: 2.5;
+    font-size: large;
 }
 
 
@@ -106,6 +112,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 75px;
+    padding-top: 15px;
 }
 
 footer p {
