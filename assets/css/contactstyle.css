@@ -24,7 +24,7 @@ li a {
 
 ul hr {
     margin: 0;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     border: 1px solid;
     opacity: 0.15;
 }
@@ -72,27 +72,65 @@ a:not([href]) {
 /* Body */
 /********************************************************************************************/
 main {
+    margin: 25px 15px 25px 15px;
     background-color: white;
     border: 1px solid #dddddd;
+    height: 625px;
+    overflow: auto;
+    overflow-y: none;
 }
 
 h2 {
-    margin: 25px;
+    margin: 25px 25px 0 25px;
+    color: #4aaaa5;
+    font-weight: bold;
 }
 
+/* .contactcard {
+    margin:0;
+    margin-top: -25px;
+} */
+
 form {
-    margin: 25px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: -100px;
+    width: 120%;
 }
 
 form input {
-    width: 100%;
+    width: 105%;
+    margin: 0 0 10px 0;
+}
+
+
+input::placeholder {
+    color: #dddddd
+}
+
+
+textarea::placeholder {
+    color: #dddddd;
 }
 
 
 form textarea {
-    width: 100%;
+    width: 105%;
+    height: 200px;
+    max-height: 350px;
+    min-height: 50px;
+    margin-bottom: 10px;
+    border-color: #d1d1d1;
 }
 
+
+input#submit {
+    background-color: #4aaaa5;
+    color: white;
+    border-color: #dddddd;
+    font-size: large;
+    width: 10%;
+}
 
 
 /********************************************************************************************/
