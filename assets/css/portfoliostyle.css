@@ -73,11 +73,82 @@ a:not([href]) {
 main {
     background-color: white;
     border: 1px solid #dddddd;
+    overflow: auto;
+    margin: 25px 10px 25px 10px;
+    height: 600px;
 }
 
 h2 {
-    margin: 25px;
+    margin: 25px 25px 0 25px;
+    color: #4aaaa5;
+    font-weight: bold;
 }
+
+.projectrow {
+    margin-bottom: 25px;
+}
+
+
+.projects img {
+    position: relative;
+    margin: 25px 0 25px 0;
+    width: 325px;
+    z-index: 2;
+}
+
+
+
+.projects h3 {
+    position: relative;
+    font-size: large;
+    text-align: center;
+    width: 325px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 0 10px 0;
+    margin-top: -75px;
+    margin-bottom: 50px;
+    z-index: 3;
+}
+
+.description {
+    position: relative;
+    color: white;
+    background-color: #666666;
+    width: 300px;
+    margin-left: 25px;
+    text-align: center;
+    margin-top: -250px;
+    transform: scaleY(0);
+    transition: transform .10s;
+    z-index: 4;
+}
+
+
+.imgcontainer:hover {
+    transform: scale(1.2);
+    /* opacity: 0.9; */
+} 
+
+
+
+.imgcontainer:hover .description {
+    transform: scaleY(1);
+}
+
+
+.imgcontainer:hover .projectimg{
+    opacity: 0.25;
+}
+
+
+.imgcontainer:hover .projecthref{
+    text-decoration: none;
+}
+
+
+
+
 
 
 /********************************************************************************************/
