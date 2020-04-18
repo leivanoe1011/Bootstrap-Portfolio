@@ -20,43 +20,95 @@
     </head>
     <body>
 
-        <div class="container">
-            <!-- navbar-default -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <span class="navbar-brand" >NOE LEIVA</span>
+        <div class="container-fluid">
+    
+            <!-- Row -->
+            <div class="row" id="nav-row">
 
-                <!-- Button used to expand navbar when screen size is small -->
-                <button class="navbar-toggler" 
-                    type="button" 
-                    data-toggle="collapse" 
-                    data-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
+                <!-- Space filler to center the NavBar -->
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
 
-                    <!-- Button icon content -->
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Column -->
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    
+                    <!-- navbar-default -->
+                    <!-- navbar-fixed-top allows navbar to expand to the end -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <span class="navbar-brand" id="my-name">NOE LEIVA</span>
 
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- ml is changing the margin to the left -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <!-- Active will hightlight the current page -->
-                        <li class="nav-item active">
-                            <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
-                        </li>
+                        <!-- Button used to expand navbar when screen size is small -->
+                        <!-- Below the data-toggle is saying that it will toggle the Class Collapse -->
+                        <button class="navbar-toggler" 
+                            type="button" 
+                            data-toggle="collapse" 
+                            data-target="#navbarSupportedContent" 
+                            aria-controls="navbarSupportedContent" 
+                            aria-expanded="false" 
+                            aria-label="Toggle navigation">
+
+                            <!-- Button icon content -->
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+                    
+                        <!-- The class Collapse will get toggled by the Data Toggle attribute above -->
+                        <!-- The id below will be used by the Toggle Target attribute above -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- ml is changing the margin to the left -->
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span> </a>
+                                </li>
+                                <!-- Active will hightlight the current page -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                
+                            </ul>
                         
-                    </ul>
+                        </div>
+                    </nav>
+                    <!-- /navbar-default -->
                 
                 </div>
-            </nav>
+                <!-- Column -->
+
+                <!-- Space filler to center the NavBar -->
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+
+            </div>
+             <!-- Row -->
+
+
+             <!-- Row -->
+             <div class="row" id="main-content">
+                 <!-- Space filler to center the NavBar -->
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 col-xl-8" id="me-content">
+                    <h2>Contact</h2>
+                    
+                    <hr>
+
+                    
+
+                </div>
+                
+
+                <!-- Space filler to center the NavBar -->
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"></div>
+             </div>
+             <!-- /Row -->
+
+
+             <!-- Row -->
+             <footer class="row" id="footer-content">
+                <p class="col-xs-12 col-sm-12 col-md-12">Copyright &copy; <script>document.write(new Date().getFullYear())</script> </p>
+            </footer>
+            <!-- /Row -->
 
         </div> <!--/container-->
     
