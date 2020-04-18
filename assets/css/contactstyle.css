@@ -81,6 +81,51 @@ p > img {
     margin: 10px;
 }
 
+input {
+    width: 100%;
+    border: 0.5px solid #dddddd;
+    padding: 2px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    /* box-sizing: border-box; */
+}
+
+::placeholder {
+    font-size: small;
+    color: #dddddd;
+}
+
+#message {
+     /* float: center; */
+     /* The settings below are the initial configuration of the box */
+     width: 100%;
+     height: 150px;
+
+     /* Min Width will prevent the submit button to move up */
+     min-width: 875px;
+ 
+     /* Max Width will prevent message box to move out of the Main box*/
+     max-width: 100%;
+     min-height: 50px;
+     max-height: 250px;
+     
+     
+     /* Scroll bar will be provided if the message is long */
+     overflow: auto;
+     border-color: #cccccc;
+     
+     margin: 10px 0px 10px 0px;
+}
+
+#submit {
+    bottom: -5px;
+    width: 100px;
+    font-size: medium;
+    background-color: #4aaaa5;
+    color: white;
+    border: none;
+    margin: 20px 0px 10px 0px;
+}
 
 /********************************************************************************************/
 /* Footer */

@@ -15,8 +15,10 @@
             crossorigin="anonymous"
         >
 
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/contactstyle.css">
 
-        <title>Me</title>
+        <title>Contact</title>
     </head>
     <body>
 
@@ -58,12 +60,12 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <!-- ml is changing the margin to the left -->
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span> </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">About</a>
                                     </li>
                                     <!-- Active will hightlight the current page -->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span> </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -95,6 +97,18 @@
                         
                         <hr>
     
+                        <form>
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" placeholder="Mary Smith"><br>
+                            <label for="email">Email</label><br>
+                            <input type="text" id="email" name="email" placeholder="marysmith@gmail.com"><br>
+                            <label for="message">Message</label><br>
+                            <!-- <input type="text" id="message" name="message"><br> -->
+                            <textarea class="input message" name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+                
+                            <input id="submit" type="submit" value="Submit">
+                
+                        </form>
                         
     
                     </div>
