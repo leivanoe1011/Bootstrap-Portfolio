@@ -181,7 +181,7 @@ footer p {
 @media (min-width:414px) and (max-width:768px){
 
     .nav-link > hr {
-        width: 30%;
+        width: 20%;
     }
 
     p > img {

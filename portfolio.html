@@ -99,10 +99,10 @@
 
                     <!-- Begin Row -->
                     <div class="row" >
-                        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
+                        <div class="col col-xs-12 col-sm-12 col-md-10 col-lg-4 col-xl-4" id ="proj-container">
             
-                            <img class="col" id="projectimg" src="assets/images/RobotFriend.jpg" alt="Notebook" >
-                            <a class="col" id="projecthref" href="https://leivanoe1011.github.io/RoboFriends/">
+                            <img id="projectimg" src="assets/images/RobotFriend.jpg" alt="Notebook" >
+                            <a id="projecthref" href="https://leivanoe1011.github.io/RoboFriends/">
                                 <h3>RoboFriends</h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -116,10 +116,10 @@
                         <!-- If its a small screen then new classes will be populated here -->
                         <a href="javascript:screenSizeFunctionality('newline1');" id="newline1"></a>
                         
-                        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
+                        <div class="col col-xs-12 col-sm-12 col-md-10 col-lg-4 col-xl-4" id ="proj-container">
                                                 
-                            <img class="col" id="projectimg" src="assets/images/blue-gradient-background-wallpaper-1.jpg" alt="Notebook" >
-                            <a class="col" id="projecthref" href="https://leivanoe1011.github.io/background-generator/">
+                            <img id="projectimg" src="assets/images/blue-gradient-background-wallpaper-1.jpg" alt="Notebook" >
+                            <a id="projecthref" href="https://leivanoe1011.github.io/background-generator/">
                                 <h3>Background-Generator</h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -135,10 +135,10 @@
 
                     <!-- Begin Row -->
                     <div class="row" >
-                        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
+                        <div class="col col-xs-12 col-sm-12 col-md-10 col-lg-4 col-xl-4" id ="proj-container">
             
-                            <img class="col" id="projectimg" src="assets/images/trivia.jpg" alt="Notebook" >
-                            <a class="col" id="projecthref" href="https://leivanoe1011.github.io/RoboFriends/">
+                            <img id="projectimg" src="assets/images/trivia.jpg" alt="Notebook" >
+                            <a  id="projecthref" href="https://leivanoe1011.github.io/RoboFriends/">
                                 <h3>RoboFriends</h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -153,10 +153,10 @@
                         <a href="javascript:screenSizeFunctionality();" id="newline2"></a>
 
                     
-                        <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
+                        <div class="col col-xs-12 col-sm-12 col-md-10 col-lg-4 col-xl-4" id ="proj-container">
                                                 
-                            <img class="col" id="projectimg" src="assets/images/notebook.jpg" alt="Notebook" >
-                            <a class="col" id="projecthref" href="https://leivanoe1011.github.io/background-generator/">
+                            <img id="projectimg" src="assets/images/notebook.jpg" alt="Notebook" >
+                            <a id="projecthref" href="https://leivanoe1011.github.io/background-generator/">
                                 <h3>Background-Generator</h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -206,7 +206,7 @@
                 element.parentNode.removeChild(element);
             }
 
-            
+
             function addClass(elementId) {
                 var element = document.getElementById(elementId);
                 element.classList.add("col-xs-12");
@@ -214,7 +214,7 @@
             }
 
 
-            function myFunction(x) {
+            function eventFunction(x) {
 
                 for(var i = 0; i < elementId.length; i++) {
                     if (x.matches) { // If media query matches
@@ -226,7 +226,8 @@
             function screenSizeFunctionality(){
                 for(var i = 0; i < elementId.length; i++) {
 
-                    if(window.screen.width < 414)
+                    // The col classes should only be present if app is rendered by a small device
+                    if(window.screen.width === 414 || window.screen.width === 375 || window.screen.width === 768)
                     {
                         addClass(elementId[i]);
                     }
@@ -236,15 +237,15 @@
                 }
             }
 
-            var x = window.matchMedia("screen and (max-width:375px)")
-            var y = window.matchMedia("screen and (min-width:376px) and (max-width:414px)")
-            // var z = window.matchMedia("screen and (min-width:414px) and (max-width:768px)")
+            var x = window.matchMedia("(max-width:375px)")
+            var y = window.matchMedia("(max-width:414px)")
+            var z = window.matchMedia("(max-width:768px)")
             
-            myFunction(x) // Call listener function at run time
-            myFunction(y) // Call listener function at run time
-            // myFunction(z) // Call listener function at run time
+            eventFunction(x) // Call listener function at run time
+            eventFunction(y) // Call listener function at run time
+            eventFunction(z) // Call listener function at run time
 
-            x.addListener(myFunction) // Attach listener function on state changes          
+            x.addEventListener('resize',eventFunction) // Attach listener function on state changes          
             screenSizeFunctionality();
 
         </script>
