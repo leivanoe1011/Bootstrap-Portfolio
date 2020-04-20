@@ -113,8 +113,8 @@
                             
                         </div>
 
-                        <!-- If its a small screen then new classes will be populated here -->
-                        <a href="javascript:screenSizeFunctionality('newline1');" id="newline1"></a>
+                        <!-- If its a small screen then new classes will be populated here pushing the class below to a new line -->
+                        <a href="javascript:screenSizeFunctionality();" id="newline1"></a>
                         
                         <div class="col col-xs-12 col-sm-12 col-md-10 col-lg-4 col-xl-4" id ="proj-container">
                                                 
@@ -149,7 +149,7 @@
                             
                         </div>
                         
-                        <!-- If its a small screen then new classes will be populated here -->
+                        <!-- If its a small screen then new classes will be populated here pushing the class below to a new line -->
                         <a href="javascript:screenSizeFunctionality();" id="newline2"></a>
 
                     
@@ -245,8 +245,9 @@
             eventFunction(y) // Call listener function at run time
             eventFunction(z) // Call listener function at run time
 
-            x.addEventListener('resize',eventFunction) // Attach listener function on state changes          
-            screenSizeFunctionality();
+            // This will listen if the screen is getting resized.
+            x.addEventListener('resize',eventFunction)          
+            // screenSizeFunctionality();
 
         </script>
 
