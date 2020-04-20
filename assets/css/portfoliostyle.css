@@ -200,6 +200,11 @@ footer p {
 /* Media Query */
 /********************************************************************************************/
 @media screen and (min-width:414px) and (max-width:768px){
+
+    .nav-link > hr {
+        width: 30%;
+    }
+
    
     #proj-container > img {
         width: 100%;
@@ -218,6 +223,11 @@ footer p {
 
 /* Iphone 6/7/8 */
 @media screen and (min-width:376px) and (max-width:414px){
+    .nav-link > hr {
+        width: 30%;
+    }
+
+
     #proj-container {
         padding:0;
         margin: 10px;
@@ -251,6 +261,10 @@ footer p {
 /* Iphone x */
 @media screen and (max-width:375px){
     
+    .nav-link > hr {
+        width: 30%;
+    }
+
     #proj-container {
         padding:0;
         margin: 10px;

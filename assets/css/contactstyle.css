@@ -179,6 +179,11 @@ footer p {
 /* Media Query */
 /********************************************************************************************/
 @media (min-width:414px) and (max-width:768px){
+
+    .nav-link > hr {
+        width: 30%;
+    }
+
     p > img {
         width: 35%;
     }
@@ -189,6 +194,11 @@ footer p {
 }
 
 @media (min-width:376px) and (max-width:414px){
+
+    .nav-link > hr {
+        width: 30%;
+    }
+
     p > img {
         width: 50%;
     }
@@ -199,6 +209,11 @@ footer p {
 }
 
 @media (min-width:200px) and (max-width:375px){
+
+    .nav-link > hr {
+        width: 30%;
+    }
+
     p > img {
         width: 50%;
     }

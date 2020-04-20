@@ -113,7 +113,8 @@
                             
                         </div>
 
-                        <div id="newline"></div>
+                        <!-- If its a small screen then new classes will be populated here -->
+                        <a href="javascript:screenSizeFunctionality('newline1');" id="newline1"></a>
                         
                         <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
                                                 
@@ -148,8 +149,10 @@
                             
                         </div>
                         
-                        <div id="newline"></div>
-                        
+                        <!-- If its a small screen then new classes will be populated here -->
+                        <a href="javascript:screenSizeFunctionality();" id="newline2"></a>
+
+                    
                         <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
                                                 
                             <img class="col" id="projectimg" src="assets/images/notebook.jpg" alt="Notebook" >
@@ -191,16 +194,11 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
        
 
-        <script>
+        <script type="text/javascript">
 
-            var elementId = "newline";
+            // These ids pertain to the a tags where we trying fill in the space
+            var elementId = ["newline1","newline2"];
             
-            function myFunction(x) {
-                if (x.matches) { // If media query matches
-                    addClass(elementId);
-                } 
-
-            }
 
             function removeElement(elementId) {
                 // Removes an element from the document
@@ -208,12 +206,35 @@
                 element.parentNode.removeChild(element);
             }
 
+            
             function addClass(elementId) {
                 var element = document.getElementById(elementId);
                 element.classList.add("col-xs-12");
                 element.classList.add("col-sm-12");
             }
 
+
+            function myFunction(x) {
+
+                for(var i = 0; i < elementId.length; i++) {
+                    if (x.matches) { // If media query matches
+                        addClass(elementId[i]);
+                    } 
+                }
+            }
+
+            function screenSizeFunctionality(){
+                for(var i = 0; i < elementId.length; i++) {
+
+                    if(window.screen.width < 414)
+                    {
+                        addClass(elementId[i]);
+                    }
+                    else {
+                        removeElement(elementId[i]);
+                    }
+                }
+            }
 
             var x = window.matchMedia("screen and (max-width:375px)")
             var y = window.matchMedia("screen and (min-width:376px) and (max-width:414px)")
@@ -223,15 +244,8 @@
             myFunction(y) // Call listener function at run time
             // myFunction(z) // Call listener function at run time
 
-            x.addListener(myFunction) // Attach listener function on state changes
-
-            if(window.screen.width < 414)
-            {
-                addClass(elementId);
-            }
-            else {
-                removeElement(elementId);
-            }
+            x.addListener(myFunction) // Attach listener function on state changes          
+            screenSizeFunctionality();
 
         </script>
 
