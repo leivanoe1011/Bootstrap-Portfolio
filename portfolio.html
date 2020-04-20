@@ -208,6 +208,7 @@
 
 
             function addClass(elementId) {
+                // add the classes below to a html tag
                 var element = document.getElementById(elementId);
                 element.classList.add("col-xs-12");
                 element.classList.add("col-sm-12");
@@ -216,6 +217,7 @@
 
             function eventFunction(x) {
 
+                // The true/false is defined below where matching media size
                 for(var i = 0; i < elementId.length; i++) {
                     if (x.matches) { // If media query matches
                         addClass(elementId[i]);
@@ -237,13 +239,15 @@
                 }
             }
 
-            var x = window.matchMedia("(max-width:375px)")
-            var y = window.matchMedia("(max-width:414px)")
-            var z = window.matchMedia("(max-width:768px)")
+            var x = window.matchMedia("(max-width:375px)") // This will return true or false
+            var y = window.matchMedia("(max-width:414px)") // This will return true or false
+            var z = window.matchMedia("(max-width:768px)") // This will return true or false
             
+
             eventFunction(x) // Call listener function at run time
             eventFunction(y) // Call listener function at run time
             eventFunction(z) // Call listener function at run time
+
 
             // This will listen if the screen is getting resized.
             x.addEventListener('resize',eventFunction)          
