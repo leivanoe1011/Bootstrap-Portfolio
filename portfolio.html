@@ -22,6 +22,7 @@
     </head>
     <body>
 
+
         <div class="container-fluid">
     
             <!-- Row -->
@@ -112,7 +113,7 @@
                             
                         </div>
 
-                        <div class="col-xs-12 col-sm-12"></div>
+                        <div id="newline"></div>
                         
                         <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
                                                 
@@ -147,7 +148,7 @@
                             
                         </div>
                         
-                        <div class="col-xs-12 col-sm-12"></div>
+                        <div id="newline"></div>
                         
                         <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id ="proj-container">
                                                 
@@ -188,7 +189,51 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       
 
+        <script>
+
+            var elementId = "newline";
+            
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    addClass(elementId);
+                } 
+
+            }
+
+            function removeElement(elementId) {
+                // Removes an element from the document
+                var element = document.getElementById(elementId);
+                element.parentNode.removeChild(element);
+            }
+
+            function addClass(elementId) {
+                var element = document.getElementById(elementId);
+                element.classList.add("col-xs-12");
+                element.classList.add("col-sm-12");
+            }
+
+
+            var x = window.matchMedia("screen and (max-width:375px)")
+            var y = window.matchMedia("screen and (min-width:376px) and (max-width:414px)")
+            // var z = window.matchMedia("screen and (min-width:414px) and (max-width:768px)")
+            
+            myFunction(x) // Call listener function at run time
+            myFunction(y) // Call listener function at run time
+            // myFunction(z) // Call listener function at run time
+
+            x.addListener(myFunction) // Attach listener function on state changes
+
+            if(window.screen.width < 414)
+            {
+                addClass(elementId);
+            }
+            else {
+                removeElement(elementId);
+            }
+
+        </script>
 
     </body>
 </html>

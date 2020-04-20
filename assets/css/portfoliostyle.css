@@ -100,13 +100,15 @@ li a:hover > hr {
     vertical-align: top;
     display: inline-block;
     margin:0 auto;
-    width: 30%;
+    /* width: 100%; */
     margin-left: 13%;
     overflow: hidden;
     margin-bottom: 35px;
+    height: 300px;
     /* border-radius: 10px; */
     /* border-radius: 10px; */
 }
+
 
 #proj-container > img {
     float: left;
@@ -148,7 +150,7 @@ li a:hover > hr {
     margin:0;
     padding: 0;
     float: left;
-    margin-top: -175px;   
+    margin-top: -200px;   
     text-align: center; 
     /* background: rgba(0,0,0,.5); */
     background-color: #666666;
