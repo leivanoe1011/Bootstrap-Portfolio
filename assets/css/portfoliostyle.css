@@ -86,6 +86,10 @@ li a:hover > hr {
     overflow: auto;
 }
 
+#newline1 #newline2 {
+    display:none;
+}
+
 #me-content > h2 {
     color: #4AAAA5;
     margin: 10px 0 0 20px;
@@ -201,6 +205,10 @@ footer p {
 /********************************************************************************************/
 @media screen and (min-width:414px) and (max-width:768px){
 
+    #newline1 #newline2 {
+        display:visible;
+    }
+
     .nav-link > hr {
         width: 20%;
     }
@@ -227,6 +235,9 @@ footer p {
         width: 30%;
     }
 
+    #newline1 #newline2 {
+        display:visible;
+    }
 
     #proj-container {
         padding:0;
@@ -265,6 +276,11 @@ footer p {
         width: 30%;
     }
 
+    #newline1 #newline2 {
+        display:visible;
+    }
+
+    
     #proj-container {
         padding:0;
         margin: 10px;
