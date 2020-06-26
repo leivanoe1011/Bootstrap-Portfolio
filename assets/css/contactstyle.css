@@ -171,11 +171,13 @@ footer {
     width: 100%;
     min-height: 10%;
     padding-top: 15px;
+    line-height: 0.2 !important;
 }
 
 footer p {
     /* text-align: center; */
     color: white;
+    line-height: 0.2 !important;
 }
 
 .footerCopyRight{
