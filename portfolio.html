@@ -15,6 +15,13 @@
             crossorigin="anonymous"
         >
 
+        <!-- Font Awesome -->
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"
+        >
+
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/portfoliostyle.css">
 
@@ -68,8 +75,7 @@
                                 </li>
                                 <li class="nav-item active">
                                     <a class="nav-link" href="portfolio.html">Portfolio <hr>  <span class="sr-only">(current)</span> </a>
-                                </li>
-                                
+                                </li>    
                             </ul>
                         
                         </div>
@@ -105,9 +111,11 @@
                             <a id="projecthref" href="https://leivanoe1011.github.io/RoboFriends/">
                                 <h3>RoboFriends</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Veritatis, repellat ratione consequatur totam adipisci debitis aspernatur 
-                                    quibusdam nihil? Quidem veritatis cumque magni et voluptates corrupti possimus voluptatem dolore enim quasi!
+                                    React JS Web Framework application. 
+                                    This app creates a local data file that is used to create a contact list.<br> 
+                                    The contact list is loaded into objects and these are parsed out into cards. <br>
+                                    At the same time, each card is assigned a robot using API robohash. <br>
+                                    The card is loaded into the API and the API returns a random robot for the contact. <br>
                                 </p>
                             </a>         
                             
@@ -123,9 +131,9 @@
                             <a id="projecthref" href="https://leivanoe1011.github.io/background-generator/">
                                 <h3>Background-Generator</h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                    Veritatis, repellat ratione consequatur totam adipisci debitis aspernatur 
-                                    quibusdam nihil? Quidem veritatis cumque magni et voluptates corrupti possimus voluptatem dolore enim quasi!
+                                    Application at loading time will set a random gradient background. <br>
+                                    At the same time, the app will provide a pallet for the user to select two gradient colors. <br>
+                                    The logic is controlled and populated in JS.  Setting up HTML and CSS values with the JS style methods
                                 </p>
                             </a>
                             
@@ -281,13 +289,40 @@
              <!-- /Row -->
 
 
-             <!-- Row -->
-             <footer class="row" id="footer-content">
-                <p class="col-xs-12 col-sm-12 col-md-12">Copyright &copy; <script>document.write(new Date().getFullYear())</script> </p>
-            </footer>
-            <!-- /Row -->
-
         </div> <!--/container-->
+
+        <footer class="container-fluid">
+            
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <p>You have found your next Developer! <br>leiva.e.noe@gmail.com</p>
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                    <a id="noeResume" href="https://github.com/leivanoe1011/Bootstrap-Portfolio/raw/master/Noe_Leiva_Resume.pdf">Noe Leiva Resume</a>
+                </div>
+
+                <div class="col-sm-12 col-lg-4">
+                    <ul id="footerSocialIcon" class="d-flex justify-content-end list-group list-group-horizontal ">
+                        <li class="d-flex justify-content-end">
+                            <a class="btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/noeleivadeveloper/">
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                        <li class="d-flex justify-content-end">
+                            <a class="btn-social-icon btn-github" href="https://github.com/leivanoe1011/Bootstrap-Portfolio">
+                                <span class="fa fa-github"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Row -->
+            <div class="row d-flex align-items-center footerCopyRight" >
+                <p class="col-xs-12 col-sm-12 col-md-12">Copyright &copy; <script>document.write(new Date().getFullYear())</script> </p>
+            </div>
+            <!-- /Row -->
+        </footer>
     
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -65,6 +65,11 @@ li a:hover > hr {
 }
 
 
+.fa{
+    margin: 0 !important;
+}
+
+
 .active {
     color: #3c8b88 !important;
 
@@ -120,13 +125,31 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 75px;
+    min-height: 10%;
     padding-top: 15px;
 }
 
 footer p {
-    text-align: center;
+    /* text-align: center; */
     color: white;
+}
+
+.footerCopyRight{
+    background-color: black !important;
+    padding-top: 10px;
+}
+
+#noeResume {
+    color: white;
+}
+
+#footerSocialIcon .btn-social-icon{
+    color: white;
+}
+
+#footerSocialIcon .btn-social-icon:hover{
+    padding: 5px 10px 5px 10px;
+    color: black;
 }
 
 
