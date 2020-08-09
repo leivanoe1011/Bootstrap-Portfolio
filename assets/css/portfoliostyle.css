@@ -133,7 +133,24 @@ li a:hover > hr {
     font-size: large;
 }
 
-#proj-container:hover {
+.card{
+    margin-bottom: 50px;
+}
+
+.proj_title{
+    background-color: #4aaaa5;
+    text-align: center;
+
+}
+
+.card-title {
+    color: white;
+}
+
+
+
+
+.proj-container:hover {
     transform: scale(1.2);
     text-decoration: none;
     /* opacity: 0.9; */
@@ -155,7 +172,7 @@ li a:hover > hr {
     /* border-radius: 10px; */
 }
 
-#proj-container .description {
+.proj-container .description {
     margin:0;
     padding: 0;
     float: left;
@@ -169,16 +186,16 @@ li a:hover > hr {
     opacity: 0.8;
 }
 
-#proj-container:hover .description {
+.proj-container:hover .description {
     transform: scaleY(1);
     text-decoration: none;
 }
 
-#proj-container:hover #projectimg {
+.proj-container:hover #projectimg {
     opacity: 0.25;
 }
 
-#proj-container:hover #projecthref {
+.proj-container:hover #projecthref {
     text-decoration: none;
     color: white;
 }
@@ -261,7 +278,7 @@ footer p {
         display:visible;
     }
 
-    #proj-container {
+    .proj-container {
         padding:0;
         margin: 10px;
     }
