@@ -79,6 +79,11 @@ li a:hover > hr {
 /********************************************************************************************/
 /* Body */
 /********************************************************************************************/
+
+/* #portfolio-content{
+    height: 50px;
+} */
+
 #main-content{
     margin-bottom: 50px;
 }
@@ -87,7 +92,7 @@ li a:hover > hr {
     background-color: white;
     border: 1px solid #dddddd;
     padding: 15px;
-    max-height: 625px;
+    max-height: 800px;
     overflow: auto;
 }
 
@@ -134,7 +139,7 @@ li a:hover > hr {
 }
 
 .card{
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
 
 .proj_title{
@@ -148,10 +153,8 @@ li a:hover > hr {
 }
 
 
-
-
 .proj-container:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     text-decoration: none;
     /* opacity: 0.9; */
 } 
@@ -179,7 +182,7 @@ li a:hover > hr {
     margin-top: -200px;   
     text-align: center; 
     /* background: rgba(0,0,0,.5); */
-    background-color: #666666;
+    background-color: #383838;
     color: #f0f0f0;
     transform: scaleY(0);
     transition: transform .5s;
